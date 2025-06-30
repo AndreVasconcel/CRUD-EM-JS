@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <h2>Sistema de Cadastro</h2>
+    <img src="./imagens/compass.jpg" alt="CompassUOL">
+  </header>
+
+  <main class="pagina">
+    <section class="secao__formulario">
+        <form class="form-cadastro">
+            <h1>Cadastrar Usuário</h1>
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Digite seu nome" id="nome" required>
+
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" id="dataNascimento" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" placeholder="Digite seu Telefone" id="telefone" required>
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="Digite seu Email" id="email" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <section class="secao-consulta">
+      <h1>Consultar Usuário</h1>
+      <input type="text" id="input-consulta" placeholder="Digite o email para buscar">
+      <button id="btn-consultar">Consultar</button>
+      <div id="resultado-consulta" class="resultado"></div>
+    </section>
+
+    <section class="secao-deletar">
+      <h1>Deletar Usuário</h1>
+      <input type="text" id="input-deletar" placeholder="Digite o email para deletar">
+      <button id="btn-deletar">Deletar</button>
+      <div id="resultado-delecao" class="resultado"></div>
+    </section>
+
+    <section class="secao-listar">
+      <h1>Listar Usuários</h1>
+      <button id="btn-listar">Listar</button>
+      <div id="resultado-listagem" class="resultado"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Desenvolvido por André Vasconcelos</p>
+  </footer>
+
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>
