@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor-primaria: #F3F4F6;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #f9f9f9;
+    --cor-quartenaria: #0047b6;
+
+    --font-primaria: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-primaria);
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+}
+
+.cabecalho {
+    background-color: var(--cor-secundaria);
+    padding: 1% 5% 1% 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho img {
+    max-height: 80px;
+}
+
+.pagina {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  padding: 2rem;
+}
+
+.pagina section {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: var(--cor-terciaria);
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--cor-secundaria); 
+}
+
+.rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--cor-secundaria);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pagina section h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 2.2em;
+}
+
+.pagina section  input {
+    padding: 13px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+.pagina section label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pagina section button {
+  background-color: var(--cor-quartenaria);
+  color: var(--cor-primaria);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border: 2px solid var(--cor-quartenaria);
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.pagina section button:hover {
+    transform: scale(1.05);
+    background-color: var(--cor-quartenaria);
+}
+
+.usuario-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .pagina {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .pagina section {
+        width: auto;
+    }
+}
