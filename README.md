@@ -1,5 +1,4 @@
-# Projeto 1(Sprint 1) - CompassUOL  
-**Artificial Intelligence with AWS - Jun/2025**
+# CRUD com localStorage e JS
 
 ## Descrição  
 Um sistema para armazenamento e gerenciamento de dados cadastrais de usuários, utilizando o padrão de projeto **Factory**.  
@@ -17,17 +16,6 @@ Após inserir um e-mail, o sistema verifica se o usuário existe e solicita conf
 
 Listagem:
 Lista todos os usuários cadastrados. Os dados são exibidos em cartões organizados em coluna.
-
-## Dificuldades Encontradas
-1. Gerenciamento do localStorage
-
-Inicialmente, houve confusão sobre como armazenar múltiplos usuários sem sobrescrever os anteriores.
-A solução foi utilizar um array de objetos no localStorage, convertendo-o com JSON.stringify() e JSON.parse() para manter a persistência dos dados.
-
-2. Layout Responsivo
-
-Um dos principais desafios foi garantir que o sistema tivesse um layout responsivo e amigável, adaptando-se bem a diferentes tamanhos de tela, especialmente em dispositivos móveis.
-A solução foi utilizar Flexbox para organizar as seções lado a lado em telas maiores. Para telas menores, foi aplicada uma media query que altera a direção do layout para column-reverse, facilitando a navegação em celulares.
 
 ## Como Executar o Projeto Localmente
 Siga os passos abaixo para rodar o sistema em sua máquina local:
